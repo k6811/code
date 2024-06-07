@@ -6,5 +6,5 @@ hold one
 for I = 1:size(BB,1)
 rectangle('Position',BB(i,:),'LineWidth',2,'LinStyle','-','EdgeColor','r');
 end
-title(Face Detection');
+title('Face Detection');
 hold off;
