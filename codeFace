@@ -1,0 +1,10 @@
+FDetect = vision.CascadeObjectDetector;
+I = imread('Harrypotter.jpg')
+BB = step(FDetect,I);
+imshow(I);
+hold one
+for I = 1:size(BB,1)
+rectangle('Position',BB(i,:),'LineWidth',2,'LinStyle','-','EdgeColor','r');
+end
+title(Face Detection');
+hold off;
